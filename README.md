@@ -4,9 +4,9 @@ This template will give you the necessary steps to install, build, debug and run
 
 ### **References:**
 
-Independentpixels. (2021, October 17). An SDL2 starter project for Mac and VSCode [GitHub repository]. GitHub. https://github.com/independentpixels/sdl2-starter
+*[1] Independentpixels. (2021, October 17). An SDL2 starter project for Mac and VSCode [GitHub repository]. GitHub. https://github.com/independentpixels/sdl2-starter*
 
-Independent Pixels. (2021, May 22). Soft robotic gripper for jellyfish [Video]. YouTube. https://www.youtube.com/watch?v=guRoWTYfxMs
+*[2] Independent Pixels. (2021, May 22). How to Setup SDL2 and VSCode to Start Programming OpenGL on a Mac [Video]. YouTube. https://youtu.be/Dyz9O7s7B8w?si=eQLmjlO10EtumzYa*
 
 ### Dependencies:
 
@@ -47,9 +47,9 @@ Please notice that the directory .`vsode` contains custom `.json` files written 
 ```jsx
 /b-sdl_cmake_hello_window
 ├── .vscode
-│		├── launch.json
-│		├── settings.json
-│		└── tasks.json
+│	├── launch.json
+│	├── settings.json
+│	└── tasks.json
 ├── LICENSE
 ├── Makefile
 ├── README.md
@@ -81,7 +81,13 @@ Please notice that the directory .`vsode` contains custom `.json` files written 
     cd .PATH/b-sdl_cmake_hello_window
     ```
     
-6. Inside `./b-sdl_cmake_hello_window` run make to compile, link, name and execute the program.
+6. Inside `./b-sdl_cmake_hello_window`, create a `build` and `debug` folder using:
+    
+    ```cpp
+    mkdir -p build/debug
+    ```
+    
+7. Inside `./b-sdl_cmake_hello_window` run make to compile, link, name and execute the program. A black window with a white point in the middle will appear
     
     ```bash
     make
