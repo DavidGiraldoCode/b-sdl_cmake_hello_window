@@ -81,7 +81,7 @@ Please notice that the directory .`vsode` contains custom `.json` files written 
     cd .PATH/b-sdl_cmake_hello_window
     ```
     
-6. Inside `./b-sdl_cmake_hello_window` run make to compile, link, name and execute the program. A black window with a white point in the middle will appear
+6. Inside `./b-sdl_cmake_hello_window` run make to compile, link, name and execute the program.
     
     ```bash
     make
@@ -94,11 +94,14 @@ Please notice that the directory .`vsode` contains custom `.json` files written 
     Hello Window! 
     SDL_Init succeeded 
     ```
-    
+The following black window with a white point in the middle will appear:
+<img src="https://github.com/DavidGiraldoCode/b-sdl_cmake_hello_window/blob/main/hello_window_outcome.png?raw=true" alt="Alt text" width="80%">
 
-Luckily, you are now ready to build your own game engine 👾.
+## Luckily, you are now ready to build your own game engine 👾.
 
-Lastly, if you are using the VSCode debugger, you will probably want to remove the command of automatically execute the program after compilation. In that case, go into the Makefile, and in the last line remove `&& ./$(BUILD_DIR)/$(OBJ_NAME)`
+### But, before you start…
+
+If you are using the VSCode debugger, you will probably want to remove the command that automatically executes the program after compilation. In that case, go into the Makefile, and in the last line remove `&& ./$(BUILD_DIR)/$(OBJ_NAME)`
 
 ```cpp
 all:
