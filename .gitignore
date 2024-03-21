@@ -18,3 +18,8 @@ game
 
 # Preserve soft links
 !*/
+
+# Ignore everything in the build directory except for debug
+/build/*
+!/build/debug/
+/build/debug/*
